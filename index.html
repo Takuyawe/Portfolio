@@ -1,0 +1,174 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Portfolio</title>
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.2/css/all.css" integrity="sha384-vSIIfh2YWi9wW0r9iZe7RJPrKwp6bG+s9QZMoITbCckVJqGCCRhc+ccxNcdpHuYu" crossorigin="anonymous">
+    <link rel="stylesheet" href="styles.css">
+    <script src="main.js" defer></script>
+</head>
+<body>
+    <header class="header" id="header">
+        <div class="header-title">
+            <h1>Takuya Nemoto</h1>
+            <h2>Who Am I ?</h2>
+        </div>
+        <div class="header-logo">
+            <nav class="header-link">
+                <a href="#header">Home</a>
+                <a href="#about">About</a>
+                <a href="#projects">Projects</a>
+                <a href="#footer">Contact</a>
+            </nav>
+            <h2>Takuya Nemoto</h2>
+            <div class="hamburger">
+                <span><i class="fas fa-bars"></i></span>
+            </div>
+        </div>
+        <div class="modal"></div>   
+           
+    </header>
+    <div class="sidenav" id="sidenav">
+        <span class="cancel-btn" id="cancel-btn">
+            <i class="fas fa-times"></i>
+        </span>
+        <ul class="navbar">
+            <li><a href="#header">home</a></li>
+            <li><a href="#about">about</a></li>
+            <li><a href="#projects">projects</a></li>
+            <li><a href="#footer">contact</a></li>
+        </ul>
+    </div>
+    <section class="hero">
+        <div class="hero-title">
+            <h2>Takuya Nemoto</h2>
+            <p>Hello! I'm a self taught programmer. <br>
+            I'm also capable of speaking in English. <br>
+        I'd be glad if you could check my profile!</p>
+        </div>
+        <div class="hero-button">
+            <button class="hero-btn"><a href="#about">About Me</a></button>
+        </div>
+
+    </section>
+    <section class="about" id="about">
+        <h2>About me</h2>
+        <div class="about-intro">
+            <div class="about-img">
+                <img src="./images/takuya.about.jpg" alt="" class="img">
+                <h4>Takuya Nemoto</h4>
+            </div>
+            <div class="about-text">
+                <p>I'm graduating from Soka University and 
+                    getting a bachelor degree of Internation Liberal Arts.
+                    <br> I have the capability of using markup languages 
+                    which are HTML and CSS, and Javascript as well.
+                </p>
+            </div>
+        </div>
+
+    </section>
+    <section class="projects" id="projects">
+        <h2>Projects</h2>
+        <div class="projects-container">
+            <div class="project-card">
+                <img src="./images/to-doList.png" alt="Project One Image" class="project-image">
+                <h3>To-do App</h3>
+                <p class="subtext">This is a simple to-do app that you can make a note.</p>
+                <hr/>
+                <p class="subtext"><a class="project-link" href="https://github.com/Takuyawe">View here</a></p>
+            </div>
+            <div class="project-card">
+                <img src="./images/expensetracker.png" alt="Project Tne Image" class="project-image">
+                <h3>Expense Tracker</h3>
+                <p class="subtext">You can keep a record of household expenses with this app.</p>
+                <hr/>
+                <p class="subtext"><a class="project-link" href="https://github.com/Takuyawe">View here</a></p>
+
+            </div>
+            <div class="project-card">
+                <img src="./images/memorytest.png" alt="Project Three Image" class="project-image">
+                <h3>Memory Test</h3>
+                <p class="subtext">This is a simple memory test consisting of an image and five questions.</p>
+                <hr/>
+                <p class="subtext"><a class="project-link" href="https://github.com/Takuyawe">View here</a></p>
+
+            </div>
+            <div class="project-card">
+                <img src="./images/gomoku.png" alt="Project Four Image" class="project-image">
+                <h3>Gomoku Narabe</h3>
+                <p class="subtext">Gomoku Narabe is a famous board game which is similar with Othello.</p>
+                <hr/>
+                <p class="subtext"><a class="project-link" href="https://github.com/Takuyawe">View here</a></p>
+
+            </div>
+        </div>
+    </section>
+    <footer class="footer" id="footer">
+        <div class="footer-title">
+            <h2>Contact Me</h2>
+        </div>
+        <div class="footer-form">
+            <form action="https://formsubmit.co/takuslugger200@gmail.com" method="POST">
+                <label for="name">
+                    Name :
+                    <input type="text" name="name" placeholder="name" required>
+                </label>
+                <label for="email">
+                    Email :
+                    <input type="email" name="email" placeholder="email-address" required>
+                </label>
+                <label for="text">
+                    <textarea name="text" id="text" placeholder="Ask me anything !" cols="70" rows="10"></textarea>
+                </label>
+                <button type="submit">Send</button>
+            </form>
+        </div>
+        <div class="footer-info-title">
+            <h2>My Information</h2>
+            <div class="footer-info">
+                <div class="left-info">
+                    <h4>My Status</h4>
+                    <div class="left-info-status">
+                        <div class="info-name">
+                            <h4>Name : </h4>
+                            <h4>Takuya Nemoto</h4>
+                        </div>
+                        <div class="info-status">
+                            <h4>Occupation : </h4>
+                            <h4>University Student</h4>
+                        </div>
+                        <div class="info-future">
+                            <h4>Graduation : </h4>
+                            <h4>March, 2022</h4>
+                        </div>
+                    </div>    
+                </div>
+                <div class="right-info">
+                    <h4>My Contact Address</h4>
+                    <div class="info-app">
+                        <span class="instagram">
+                            <a href="https://www.instagram.com/takuyawe/"><i class="fab fa-instagram"></i></a>
+                            <h4>Name : takuyawe</h4>
+                        </span>
+                        <span class="facebook">
+                            <a href="https://www.facebook.com/takuya.nemoto.5245/"><i class="fab fa-facebook-square"></i></a>
+                            <h4>Name : Takuya Nemoto</h4>
+                        </span>
+                        <span class="line">
+                            <i class="fab fa-line"></i>
+                            <h4>ID : takuyawe</h4>
+                        </span>
+                    </div>
+                </div>
+            </div>
+        </div>
+        
+        
+    </footer>
+
+    
+</body>
+</html>
